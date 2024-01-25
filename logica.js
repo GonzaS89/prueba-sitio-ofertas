@@ -7,7 +7,7 @@ const pollerias =
         'cadeteria' : false,
         'ofertas': 
         {
-            'nombreOferta' : '3 kilos de Patamuslo',
+            'nombreOferta' : '2 kilos de suprema',
             'precio' : 3800
         }
     },
@@ -25,6 +25,8 @@ const pollerias =
     }
 ]
 
+
+
 let nombreOferta = document.querySelector('.nombre-oferta');
 let precioOferta = document.querySelector('.precio-oferta');
 let nombreLocal = document.querySelector('.nombre-local');
@@ -34,10 +36,10 @@ let serviciodecadeteria = document.querySelector('.serviciodecadeteria');
 pollerias.forEach(element => {
     nombreOferta.innerHTML = element.ofertas.nombreOferta
     precioOferta.innerHTML = `$ ${element.ofertas.precio}`
-    nombreLocal.innerHTML = `Podes conseguir ésto y mas en ${element.nombrelocal}`
+    nombreLocal.innerHTML = `Podes conseguir ésto y más en ${element.nombrelocal}`
     domicilioLocal.innerHTML = `Situado en ${element.domicilio}`
-    if(element.cadeteria){serviciodecadeteria.innerHTML = 'Cuenta con servicio de cadeteria'}
-    else{'No cuenta con servicio de cadeteria'}
+    if(element.cadeteria){serviciodecadeteria.innerHTML = '(Cuenta con servicio de cadeteria)'}
+    else{'(No cuenta con servicio de cadeteria)'}
 
 })
 
