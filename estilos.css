@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+:root{
+    --fuente1 :'Single Day', cursive;
+}
+
+body{
+    background-color: #FFFC9B;
+    margin: 0;
+    padding: 0;
+}
+p,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-listaofertas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenedor-oferta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: #F28585;
+    border-radius: 10px;
+    font-family:'Gugi', sans-serif;
+    margin-top: 20px;
+    padding: 10px;
+
+    && p{
+        padding: 2px;
+    }
+}
+
+.contenedor-oferta img{
+    width: 75%;
+    height: 75%;
+    filter: drop-shadow(5px 5px 10px #000000);
+}
+
+.nombre-oferta,.nombre-local, .domicilio-local, .serviciodecadeteria{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.precio-oferta{
+    font-size: 50px;
+}
+
+.nombre-local{
+    font-size: 15px;
+    
+}
