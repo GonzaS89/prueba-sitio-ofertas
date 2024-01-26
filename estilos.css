@@ -28,10 +28,11 @@ p,h1,h2,h3{
     align-items: center;
     width: 300px;
     background-color: #F28585;
-    border-radius: 10px;
+    border-radius: 5px;
     font-family:'Gugi', sans-serif;
     margin-top: 20px;
     padding: 10px;
+    border: 15px solid #B7E5B4;
 
     && p{
         padding: 2px;
